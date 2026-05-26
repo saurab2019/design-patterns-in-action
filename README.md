@@ -15,7 +15,7 @@ Each pattern is implemented with practical examples to demonstrate:
 - How the pattern works internally
 - Real-world use cases
 
----
+
 
 # What are Design Patterns?
 
@@ -35,7 +35,7 @@ Design Patterns are widely used in:
 - UI frameworks
 - Cloud applications
 
----
+
 
 # Patterns Implemented
 
@@ -52,7 +52,7 @@ A mobile charger adapter converts high-voltage wall power into a format your pho
 - Interface conversion
 - Legacy system integration
 
----
+
 
 ## 2. Command Pattern
 
@@ -67,7 +67,7 @@ A restaurant waiter takes your order and sends it to the kitchen without needing
 - Undo operations
 - Decoupling sender and receiver
 
----
+
 
 ## 3. Composite Pattern
 
@@ -82,7 +82,7 @@ A file system where files and folders are treated similarly.
 - Recursive composition
 - Uniform object handling
 
----
+
 
 ## 4. Decorator Pattern
 
@@ -97,7 +97,7 @@ Adding toppings to a pizza or coffee without changing the original item.
 - Composition over inheritance
 - Flexible feature additions
 
----
+
 
 ## 5. Factory Method Pattern
 
@@ -112,7 +112,7 @@ A logistics company creating different transport objects like Truck, Ship, or Ai
 - Loose coupling
 - Polymorphic instantiation
 
----
+
 
 ## 6. Observer Pattern
 
@@ -127,7 +127,7 @@ YouTube subscribers receiving notifications when a creator uploads a new video.
 - Publish-subscribe model
 - Reactive communication
 
----
+
 
 ## 7. Iterator Pattern
 
@@ -142,7 +142,7 @@ Scrolling through songs in a music playlist.
 - Collection abstraction
 - Encapsulated iteration logic
 
----
+
 
 ## 8. Proxy Pattern
 
@@ -150,7 +150,7 @@ The Proxy Pattern provides a placeholder or surrogate object to control access t
 
 This repository includes multiple types of proxies.
 
----
+
 
 ### 8.1 Remote Proxy
 
@@ -165,7 +165,7 @@ A local application communicating with a remote cloud service.
 - Distributed systems design
 - Network transparency
 
----
+
 
 ### 8.2 Virtual Proxy
 
@@ -180,7 +180,7 @@ Lazy loading high-resolution images on websites.
 - Performance optimization
 - Resource management
 
----
+
 
 ### 8.3 Protection Proxy
 
@@ -195,7 +195,7 @@ Admin panels where only authorized users can modify settings.
 - Authorization
 - Security abstraction
 
----
+
 
 ## 9. Singleton Pattern
 
@@ -210,7 +210,7 @@ Application-wide configuration manager or logging service.
 - Global shared state
 - Thread-safe singleton concepts
 
----
+
 
 ## 10. State Pattern
 
@@ -225,8 +225,6 @@ A vending machine behaving differently depending on whether it has money inserte
 - Eliminating large conditionals
 - Dynamic behavior switching
 
----
-
 ## 11. Template Method Pattern
 
 ### Purpose
@@ -240,7 +238,48 @@ Making beverages where boiling water is common, but tea and coffee preparation d
 - Hook methods
 - Code reuse through inheritance
 
----
+# Running and Testing Patterns
+
+Each design pattern folder contains a dedicated `*TestDrive.cs` file used to test and experiment with that specific pattern implementation.
+
+Example:
+
+```csharp
+namespace DesignPatterns.IteratorPattern
+{
+    public class IteratorPatternTestDrive : TestDrive
+    {
+        public static void test()
+        {
+            /* Write the code here to test the implementation of the Iterator Pattern */
+
+            Console.WriteLine("Iterator Pattern Test Drive");
+        }
+    }
+}
+```
+
+These test drive classes act as small entry points for:
+- Testing pattern behavior
+- Understanding object interactions
+- Experimenting with different implementations
+- Learning how the pattern works internally
+
+To test a pattern:
+1. Open the corresponding `*TestDrive.cs` file
+2. Write or modify the test code
+3. Call the `test()` method from `Program.cs`
+
+Example:
+
+```csharp
+IteratorPatternTestDrive.test();
+```
+
+This structure keeps:
+- Pattern implementation separated
+- Testing clean and modular
+- Code easy to navigate and extend
 
 # Technologies Used
 
@@ -249,7 +288,7 @@ Making beverages where boiling water is common, but tea and coffee preparation d
 - Object-Oriented Programming
 - SOLID Principles
 
----
+
 
 # Learning Goals
 
@@ -260,7 +299,7 @@ This repository was created to:
 - Learn enterprise-level coding practices
 - Explore reusable software patterns
 
----
+
 
 # Future Improvements
 
@@ -273,7 +312,7 @@ Potential future additions:
 - Dependency Injection examples
 - Multithreaded pattern implementations
 
----
+
 
 # References
 
@@ -281,7 +320,7 @@ Potential future additions:
 - Gang of Four (GoF) Design Patterns
 - Microsoft .NET Documentation
 
----
+
 
 # Author
 
